@@ -1,0 +1,20 @@
+export var AnnotationType;
+(function (AnnotationType) {
+    AnnotationType[AnnotationType["Text"] = 1] = "Text";
+    AnnotationType[AnnotationType["Link"] = 2] = "Link";
+    AnnotationType[AnnotationType["FreeText"] = 3] = "FreeText";
+    AnnotationType[AnnotationType["Line"] = 4] = "Line";
+    AnnotationType[AnnotationType["Square"] = 5] = "Square";
+    AnnotationType[AnnotationType["Circle"] = 6] = "Circle";
+    AnnotationType[AnnotationType["Polygon"] = 7] = "Polygon";
+    AnnotationType[AnnotationType["Polyline"] = 8] = "Polyline";
+    AnnotationType[AnnotationType["Highlight"] = 9] = "Highlight";
+    AnnotationType[AnnotationType["Underline"] = 10] = "Underline";
+    AnnotationType[AnnotationType["Squiggly"] = 11] = "Squiggly";
+    AnnotationType[AnnotationType["StrikeOut"] = 12] = "StrikeOut";
+    AnnotationType[AnnotationType["Stamp"] = 13] = "Stamp";
+    AnnotationType[AnnotationType["Caret"] = 14] = "Caret";
+    AnnotationType[AnnotationType["Ink"] = 15] = "Ink";
+    AnnotationType[AnnotationType["Popup"] = 16] = "Popup";
+    AnnotationType[AnnotationType["FileAttachment"] = 17] = "FileAttachment";
+})(AnnotationType || (AnnotationType = {}));
