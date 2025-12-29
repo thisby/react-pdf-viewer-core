@@ -1,0 +1,28 @@
+import * as React from 'react';
+import { RotateDirection } from '../structs/RotateDirection';
+import { ViewMode } from '../structs/ViewMode';
+import { type Destination } from '../types/Destination';
+import { type PageSize } from '../types/PageSize';
+import { type PdfJs } from '../types/PdfJs';
+import { type Plugin } from '../types/Plugin';
+import { type RenderPage } from '../types/RenderPage';
+export declare const PageLayer: React.FC<{
+    doc: PdfJs.PdfDocument;
+    measureRef: React.RefCallback<HTMLElement>;
+    outlines: PdfJs.Outline[];
+    pageIndex: number;
+    pageRotation: number;
+    pageSize: PageSize;
+    plugins: Plugin[];
+    renderPage?: RenderPage;
+    renderQueueKey: number;
+    rotation: number;
+    scale: number;
+    shouldRender: boolean;
+    viewMode: ViewMode;
+    onExecuteNamedAction(action: string): void;
+    onJumpFromLinkAnnotation(destination: Destination): void;
+    onJumpToDest(destination: Destination): void;
+    onRenderCompleted(pageIndex: number): void;
+    onRotatePage(pageIndex: number, direction: RotateDirection): void;
+}>;
