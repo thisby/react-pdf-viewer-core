@@ -18,7 +18,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/react-pdf-viewer/react-pdf-viewer",
+        "url": "https://github.com/thisby/react-pdf-viewer-core",
         "directory": "packages/core"
     },
     "bugs": {
