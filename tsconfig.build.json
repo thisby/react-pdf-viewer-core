@@ -3,7 +3,7 @@
     "exclude": ["./__e2e__", "./__tests__"],
     "compilerOptions": {
         "declaration": true,
-        "outFile": "lib/index.d.ts",
+        "declarationDir": "./lib/@types",
         "emitDeclarationOnly": true
     }
 }
