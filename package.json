@@ -22,7 +22,7 @@
         "directory": "packages/core"
     },
     "bugs": {
-        "url": "https://github.com/react-pdf-viewer/react-pdf-viewer/issues"
+        "url": "https://github.com/thisby/react-pdf-viewer-core/issues"
     },
     "main": "lib/index.js",
     "types": "lib/@types/index.d.ts",
