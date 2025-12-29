@@ -1,0 +1,23 @@
+diff --git a/node_modules/@react-pdf-viewer/core/lib/cjs/core.js b/node_modules/@react-pdf-viewer/core/lib/cjs/core.js
+index 748a8dd..46e3323 100644
+--- a/node_modules/@react-pdf-viewer/core/lib/cjs/core.js
++++ b/node_modules/@react-pdf-viewer/core/lib/cjs/core.js
+@@ -2124,6 +2124,7 @@ var TextLayer = function (_a) {
+         var breaks = [].slice.call(containerEle.querySelectorAll('br[role="presentation"]'));
+         breaks.forEach(function (br) { return containerEle.removeChild(br); });
+     };
++
+     useIsomorphicLayoutEffect(function () {
+         var task = renderTask.current;
+         if (task) {
+@@ -2180,7 +2181,9 @@ var TextLayer = function (_a) {
+         return function () {
+             var _a;
+             empty();
+-            (_a = renderTask.current) === null || _a === void 0 ? void 0 : _a.cancel();
++            debugger;(_a = renderTask.current) === null || _a === void 0 ?
++             void 0 :
++            typeof(_a['cancel']) === 'function' ? _a.cancel() : void 0;
+         };
+     }, []);
+     return React__namespace.createElement("div", { className: "rpv-core__text-layer", ref: containerRef });
