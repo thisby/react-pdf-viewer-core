@@ -27,7 +27,7 @@
     "main": "lib/index.js",
     "types": "lib/@types/index.d.ts",
     "files": [
-        "@types",
+        "lib/@types",
         "lib/cjs/*.*",
         "lib/styles/*.*",
         "lib/index.d.ts",
